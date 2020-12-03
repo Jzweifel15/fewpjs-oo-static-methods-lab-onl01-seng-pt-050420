@@ -17,7 +17,7 @@ class Formatter
     let words = sentence.split(" ");
     for (let n = 0; n < words.length; n++) 
     {
-      if (n == 0) 
+      if (n === 0) 
       {
         result.push(this.capitalize(words[n]));
       } 
