@@ -15,18 +15,25 @@ class Formatter
     let exceptions = ["the", "a", "an", "but", "of", "and", "for", "at", "by", "from"];
     let result = [];
     let words = sentence.split(" ");
-    for ( let n = 0; n < arrayOfWords.length; n++ ) {
-      if ( n == 0 ) {
-        result.push( this.capitalize( arrayOfWords[ n ] ) )
-      } else {
-        if ( exceptions.includes( arrayOfWords[ n ] ) ) {
-          result.push( arrayOfWords[ n ] )
-        } else {
-          result.push( this.capitalize( arrayOfWords[ n ] ) )
+    for (let n = 0; n < arrayOfWords.length; n++) 
+    {
+      if (n == 0) 
+      {
+        result.push(this.capitalize(words[n]));
+      } 
+      else 
+      {
+        if (exceptions.includes(words[n])) 
+        {
+          result.push(words[n]);
+        } 
+        else 
+        {
+          result.push(this.capitalize(words[n]));
         }
       }
 
     }
-    return result.join( " " );
+    return result.join(" ");
   }
 }
