@@ -12,10 +12,10 @@ class Formatter
   
   static titleize(sentence)
   {
-    let exceptions = ["the", "a", "an", "but", "of", "and", "for", "at", "by", "from"];
+    let exceptionWords = ["the", "a", "an", "but", "of", "and", "for", "at", "by", "from"];
     let result = [];
     let words = sentence.split(" ");
-    for (let n = 0; n < arrayOfWords.length; n++) 
+    for (let n = 0; n < words.length; n++) 
     {
       if (n == 0) 
       {
