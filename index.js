@@ -23,7 +23,7 @@ class Formatter
       } 
       else 
       {
-        if (exceptions.includes(words[n])) 
+        if (exceptionWords.includes(words[n])) 
         {
           result.push(words[n]);
         } 
